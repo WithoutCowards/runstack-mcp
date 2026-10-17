@@ -1,0 +1,26 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "pro.runstack/checks",
+  "title": "RunStack Checks",
+  "description": "External checks of TLS, HTTP headers, email domain, DNS and ports, with cause and fix",
+  "version": "1.0.1",
+  "websiteUrl": "https://runstack.pro/developers",
+  "repository": {
+    "url": "https://github.com/WithoutCowards/runstack-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://runstack.pro/api/mcp",
+      "headers": [
+        {
+          "name": "X-RunStack-Key",
+          "description": "Free API key from https://runstack.pro/account (rsk_...)",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
