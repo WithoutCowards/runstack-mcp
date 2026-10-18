@@ -18,7 +18,7 @@ Nothing runs locally and nothing runs on your servers: only public data is check
 | `check_email_domain` | MX, SPF (10-lookup limit), DKIM, DMARC, PTR/FCrDNS, STARTTLS, MTA-STS, TLS-RPT, BIMI |
 | `check_dns` | Answers from several public resolvers compared — propagation, NXDOMAIN, inconsistencies |
 | `check_port` | TCP ports open / closed / filtered from the internet |
-| `ip_lookup` | IP or ASN owner, prefix, PTR, RPKI, geolocation |
+| `check_ip` | IP or ASN owner, prefix, PTR, RPKI, geolocation |
 
 All tools are read-only.
 
